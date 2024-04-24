@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  background-color: #f7fafc;
+  min-height: 100vh;
+}
+
+.App-dark {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.player-hand{
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 100px;
+  height: 160px;
+  border: 2px solid #1a202c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-inner {
+  position: relative;
+}
+
+.card .card-text {
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  background-color: #edf2f7;
+  color: #1a202c;
+}
+
+.card:hover .card-text {
+  visibility: hidden;
+}
+
+.highlighted {
+  background-color: #68d391;
+  border-color: #68d391;
+}
+
+.highlighted-container {
+  display: flex;
+  justify-content: center;
+}
+
+.throw-container {
+  margin: 10px;
+}
+
+.throw {
+  border: 2px solid #38a169;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.throw:hover {
+  background-color: #38a169;
+}
+
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.players {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player {
+  margin: 10px;
+}
